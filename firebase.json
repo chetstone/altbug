@@ -1,0 +1,9 @@
+{
+    "firebase": "your-firebase-url",
+    "public": "www",
+    "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "malas-firebase",
+  "version": "0.0.2",
+  "type": "app",
+  "description": "Firebase-based counter",
+  "scripts": {
+    "tests-all": "mocha -u exports -R spec --compilers js:babel/register --require babel-core/external-helpers test"
+  },
+  "devDependencies": {
+      "express": "^4.12.3",
+      "proxy-middleware": "^0.11.0",
+      "require-from": "^0.10.0",
+      "babel": "^5.0.12",
+      "babel-core": "^5.0.12",
+      "json-loader": "^0.5.1"
+  },
+  "dependencies": {
+      "react": "^0.13.3",
+      "react-bootstrap": "^0.24.2",
+      "react-router": "^0.13.2",
+      "alt": "^0.17.1"
+  }
+}
