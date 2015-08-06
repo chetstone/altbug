@@ -1,8 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
 var countCloud = 'CountFirebase';
-/* Note this file is a near-copy of webpack.fb.config.js */
 
+/* Change resolve: alias: to point to your alt repo, 
+ * or remove it to use node_modules alt */
 module.exports = {
     devtool: 'eval',
     entry: [ "./src/App.jsx"],
