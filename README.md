@@ -1,6 +1,6 @@
 # Demonstrate a bug
 
-I don't know if this is a bug in alt, react, react-bootstrap or webpack.
+This seems to be a bug in webpack. When this app is built with browserify, it works fine, but when built with webpack, some react-bootstrap `<Button>` elements don't call their onClick function when the button is clicked. In this demo, the first `Click me` button that is created when the app is started works, but subsequent ones created by clicking `Make a new button` don't work. See the description below to see how to modify the code to produce variations of this error.
 
 
 
@@ -10,41 +10,30 @@ You can view a live version of this demo [here](https://altbug.firebaseapp.com/)
 
 
 ## Setup Instructions
+First, clone [https://github.com/goatslacker/alt](https://github.com/goatslacker/alt) and checkout the `v0.17.1` tag.
 
-To run this example locally, clone the repo, run `npm install`
+Then clone this repo, run `npm install`
  and make the following edits:
 
 ### webpack.config.js
-Change `resolve: alias:` to point to your alt repo,
+ Change `resolve: alias:` to point to your alt repo,
 or remove it to use `alt` from your `node_modules`
 
 ### firebase.json
 If you want to use a firebase account, edit this to point to your firebase url
 
 ## Running instructions
-To push to your firebase, run
+To build with webpack and start a server:
 ```bash
-$ make deploy
+$ make simple
 ```
-and the example should open in your browser.
+and visit [http://localhost:8000](http://localhost:8000).
 
 
-To run a webpack hot server locally, run
+To build with browserify and start a server:
 ```bash
-$ make server
+$ make browser
 ```
-
-
-You can then visit the example in the browser of your choice at [http://localhost:8081/webpack-dev-server/](http://localhost:8081/webpack-dev-server/).
-
-If neither of those work, try a simpler version:
-
-```bash
-$ webpack
-$ cd www
-$ python -m SimpleHTTPServer
-```
-
 and visit [http://localhost:8000](http://localhost:8000).
 
 
