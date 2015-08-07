@@ -14,15 +14,11 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /.*\.jsx?$/, loaders: ['react-hot', 'babel-loader'],
+            { test: /.*\.jsx?$/, loaders: ['babel-loader'],
               include: path.join(__dirname, 'src')} ]
     },
     resolve: {
         alias: { alt: "/Users/chet/github/aalt"},
         extensions: ['', '.js', '.jsx']
     },
-    plugins: [
-        new webpack.DefinePlugin({
-            WEBPACK: true
-        })]
 }
