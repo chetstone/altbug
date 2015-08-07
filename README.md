@@ -37,6 +37,16 @@ $ make server
 
 You can then visit the example in the browser of your choice at [http://localhost:8081/webpack-dev-server/](http://localhost:8081/webpack-dev-server/).
 
+If neither of those work, try a simpler version:
+
+```bash
+$ webpack
+$ cd www
+$ python -m SimpleHTTPServer
+```
+
+and visit [http://localhost:8000](http://localhost:8000).
+
 
 ## Description
 
