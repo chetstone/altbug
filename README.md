@@ -10,17 +10,14 @@ You can view a live version of this demo [here](https://altbug.firebaseapp.com/)
 
 
 ## Setup Instructions
-First, clone [https://github.com/goatslacker/alt](https://github.com/goatslacker/alt) and checkout the `v0.17.1` tag.
+First, clone [https://github.com/goatslacker/alt](https://github.com/goatslacker/alt), checkout the `v0.17.1` tag and run `npm install`.
 
 Then clone this repo, run `npm install`
  and make the following edits:
 
 ### webpack.config.js
- Change `resolve: alias:` to point to your alt repo,
+ Change `resolve: alias:` to point to your `alt` repo,
 or remove it to use `alt` from your `node_modules`
-
-### firebase.json
-If you want to use a firebase account, edit this to point to your firebase url
 
 ## Running instructions
 To build with webpack and start a server:
